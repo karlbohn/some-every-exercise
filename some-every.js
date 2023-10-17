@@ -1,26 +1,16 @@
-/*
-Write a function called hasOddNumber which accepts an array and returns true if the array contains at least one odd number, otherwise it returns false.
-
-Examples:
-    hasOddNumber([1,2,2,2,2,2,4]) // true
-    hasOddNumber([2,2,2,2,2,4]) // false
-*/
-
 function hasOddNumber(arr) {
     return arr.some(function(num){
         return num % 2 !== 0;
     })
 }
 
-/*
-Write a function called hasAZero which accepts a number and returns true if that number contains at least one zero. Otherwise, the function should return false
 
-Examples:
-    hasAZero(3332123213101232321) // true
-    hasAZero(1212121) // false
-*/
-
-function hasAZero(num) {}
+function hasAZero(num) {
+    let newArr = String(num).split("");
+    return newArr.some(function(n){
+        return n == '0';
+    })
+}
 
 /*
 Write a function called hasOnlyOddNumbers which accepts an array and returns true if every single number in the array is odd. If any of the values in the array are not odd, the function should return false. 
