@@ -27,14 +27,15 @@ describe("#hasOnlyOddNumbers", function() {
   });
 });
 
-// describe("#hasNoDuplicates", function() {
-//   it("returns true if there are no duplicates in the array", function() {
-//     expect(hasNoDuplicates([1, 2, 3, 1])).toEqual(false);
-//   });
-//   it("returns false if there are duplicates in the array", function() {
-//     expect(hasNoDuplicates([1, 2, 3])).toEqual(true);
-//   });
-// });
+
+describe("#hasNoDuplicates", function() {
+  it("returns true if there are no duplicates in the array", function() {
+    expect(hasNoDuplicates([1, 2, 3, 1])).toEqual(false);
+  });
+  it("returns false if there are duplicates in the array", function() {
+    expect(hasNoDuplicates([1, 2, 3])).toEqual(true);
+  });
+});
 
 // describe("#hasCertainKey", function() {
 //   var arr = [
