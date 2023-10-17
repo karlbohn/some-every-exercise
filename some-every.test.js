@@ -37,20 +37,20 @@ describe("#hasNoDuplicates", function() {
   });
 });
 
-// describe("#hasCertainKey", function() {
-//   var arr = [
-//     { first: "Elie", last: "Schoppik" },
-//     { first: "Tim", last: "Garcia", isCatOwner: true },
-//     { first: "Matt", last: "Lane" },
-//     { first: "Colt", last: "Steele", isCatOwner: true }
-//   ];
-//   it("returns true if every object in the array contains a certain key", function() {
-//     expect(hasCertainKey(arr, "first")).toEqual(true);
-//   });
-//   it("returns false if every object in the array does not contain a certain key", function() {
-//     expect(hasCertainKey(arr, "isCatOwner")).toEqual(false);
-//   });
-// });
+describe("#hasCertainKey", function() {
+  var arr = [
+    { first: "Elie", last: "Schoppik" },
+    { first: "Tim", last: "Garcia", isCatOwner: true },
+    { first: "Matt", last: "Lane" },
+    { first: "Colt", last: "Steele", isCatOwner: true }
+  ];
+  it("returns true if every object in the array contains a certain key", function() {
+    expect(hasCertainKey(arr, "first")).toEqual(true);
+  });
+  it("returns false if every object in the array does not contain a certain key", function() {
+    expect(hasCertainKey(arr, "isCatOwner")).toEqual(false);
+  });
+});
 
 // describe("#hasCertainValue", function() {
 //   var arr = [
