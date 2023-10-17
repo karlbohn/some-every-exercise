@@ -37,6 +37,7 @@ describe("#hasNoDuplicates", function() {
   });
 });
 
+
 describe("#hasCertainKey", function() {
   var arr = [
     { first: "Elie", last: "Schoppik" },
@@ -52,17 +53,18 @@ describe("#hasCertainKey", function() {
   });
 });
 
-// describe("#hasCertainValue", function() {
-//   var arr = [
-//     { title: "Instructor", first: "Elie", last: "Schoppik" },
-//     { title: "Instructor", first: "Tim", last: "Garcia", isCatOwner: true },
-//     { title: "Instructor", first: "Matt", last: "Lane" },
-//     { title: "Instructor", first: "Colt", last: "Steele", isCatOwner: true }
-//   ];
-//   it("returns true if every object in an array has the same value for some key", function() {
-//     expect(hasCertainValue(arr, "title", "Instructor")).toEqual(true);
-//   });
-//   it("returns false if every object in an array does not have the same value for some key", function() {
-//     expect(hasCertainValue(arr, "first", "Elie")).toEqual(false);
-//   });
-// });
+
+describe("#hasCertainValue", function() {
+  var arr = [
+    { title: "Instructor", first: "Elie", last: "Schoppik" },
+    { title: "Instructor", first: "Tim", last: "Garcia", isCatOwner: true },
+    { title: "Instructor", first: "Matt", last: "Lane" },
+    { title: "Instructor", first: "Colt", last: "Steele", isCatOwner: true }
+  ];
+  it("returns true if every object in an array has the same value for some key", function() {
+    expect(hasCertainValue(arr, "title", "Instructor")).toEqual(true);
+  });
+  it("returns false if every object in an array does not have the same value for some key", function() {
+    expect(hasCertainValue(arr, "first", "Elie")).toEqual(false);
+  });
+});
